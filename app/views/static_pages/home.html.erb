@@ -1,7 +1,11 @@
 <% provide :title, t(".title") %>
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+<div class="center jumbotron">
+  <h1><%= t ".header1" %></h1>
+  <h2>
+    <%= t ".header2_0" %>
+    <%= link_to t(".link1"), "http://www.railstutorial.org/" %>
+    <%= t ".header2_1" %>
+  </h2>
+  <%= link_to t(".link2"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: t(".logo_alt")), "http://rubyonrails.org/" %>
