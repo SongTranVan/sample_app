@@ -35,7 +35,12 @@ en:
   title_link: "sample app"
   header_link1: "Home"
   header_link2: "Help"
-  header_link3: "Log in"
+  login_link: "Log in"
+  header_link3: "Users"
+  header_link4: "Profile"
+  header_link5: "Settings"
+  logout_link: "Log out"
+  account_txt: "Account"
   footer_content1: "The "
   footer_link1: "Ruby on Rails Tutorial"
   footer_content2: "by "
@@ -91,3 +96,14 @@ en:
     error_messages:
       error_content: "The form contains "
       error: "error"
+  sessions:
+    new:
+      title: "Log in"
+      header: "Log in"
+      email_lb: "Email"
+      password_lb: "Password"
+      submit: "Log in"
+      content1: "New user? "
+      link: "Sign up now!"
+    create:
+      error_msg: "Invalid email/password combination"
