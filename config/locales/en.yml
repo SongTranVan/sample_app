@@ -77,7 +77,17 @@ en:
       content1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link1: "contact page"
   users:
+    welcome: "Welcome to the Sample App!"
     new:
       title: "Sign Up"
       header: "Sign Up"
       content: "This will be the signup page for new users."
+      submit: "Create my account"
+      name_lb: "Name"
+      email_lb: "Email"
+      password_lb: "Password"
+      password_confirm_lb: "Confirmation"
+  shared:
+    error_messages:
+      error_content: "The form contains "
+      error: "error"
