@@ -1,0 +1,4 @@
+songtranvan:
+  name: Song Tran Van
+  email: songtranvan2511@gmail.com
+  password_digest: <%= User.digest("password") %>

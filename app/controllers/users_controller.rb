@@ -5,11 +5,13 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
+    redirect_to root_url if @user.nil?
   end
 
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t "users.welcome"
       redirect_to @user
     else
