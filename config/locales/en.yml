@@ -83,6 +83,10 @@ en:
       link1: "contact page"
   users:
     welcome: "Welcome to the Sample App!"
+    login_msg: "Please log in!"
+    delete_success: "User has been deleted!"
+    delete_fails: "Can not delete!"
+    update_success: "Your Profile has been updated!"
     new:
       title: "Sign Up"
       header: "Sign Up"
@@ -92,6 +96,20 @@ en:
       email_lb: "Email"
       password_lb: "Password"
       password_confirm_lb: "Confirmation"
+    edit:
+      title: "Edit user"
+      header: "Update your Profile"
+      name_lb: "Name"
+      email_lb: "Email"
+      password_lb: "Password"
+      password_confirm_lb: "Confirmation"
+      submit: "Save changes"
+      link: "Change"
+    index:
+      title: "All Users"
+      header: "All Users"
+      link: "Delete"
+      confirm: "Are you sure?"
   shared:
     error_messages:
       error_content: "The form contains "
@@ -108,3 +126,4 @@ en:
       checkbox_lb: "Remember me on this computer"
     create:
       error_msg: "Invalid email/password combination"
+
