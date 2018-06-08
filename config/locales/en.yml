@@ -105,5 +105,6 @@ en:
       submit: "Log in"
       content1: "New user? "
       link: "Sign up now!"
+      checkbox_lb: "Remember me on this computer"
     create:
       error_msg: "Invalid email/password combination"

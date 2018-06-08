@@ -1,3 +1,4 @@
 name_max_length: 40
 email_max_length: 255
 password_min_length: 6
+check_box: "1"
