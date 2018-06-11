@@ -82,6 +82,7 @@ en:
       content1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link1: "contact page"
   users:
+    activate_email: "Please check your email to activate your account!"
     welcome: "Welcome to the Sample App!"
     login_msg: "Please log in!"
     delete_success: "User has been deleted!"
@@ -126,4 +127,15 @@ en:
       checkbox_lb: "Remember me on this computer"
     create:
       error_msg: "Invalid email/password combination"
-
+      warning_msg: "Account not activated. Check your email for the activation link!"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      header: "Sample App"
+      content1: "Hi %{user_name}"
+      content2: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link: "Activate"
+  account_activations:
+    edit:
+      active_success: "Your account has been activated!"
+      active_fails: "Invalid activation link!"
