@@ -2,3 +2,5 @@ name_max_length: 40
 email_max_length: 255
 password_min_length: 6
 check_box: "1"
+per_page_value: 10
+avatar_size: 80
