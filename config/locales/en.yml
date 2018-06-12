@@ -124,6 +124,7 @@ en:
       submit: "Log in"
       content1: "New user? "
       link: "Sign up now!"
+      forgot_password: "Forgot your password?"
       checkbox_lb: "Remember me on this computer"
     create:
       error_msg: "Invalid email/password combination"
@@ -135,7 +136,34 @@ en:
       content1: "Hi %{user_name}"
       content2: "Welcome to the Sample App! Click on the link below to activate your account:"
       link: "Activate"
+    password_reset:
+      subject: "Password reset"
+      header: "Password reset"
+      content1: "To reset your password click the link below:"
+      content2: "This link will expire in two hours."
+      content3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      link: "Reset password"
   account_activations:
     edit:
       active_success: "Your account has been activated!"
       active_fails: "Invalid activation link!"
+  password_resets:
+    sent_email_msg: "Email sent with password reset instructions"
+    error_msg: "Email address not found"
+    expired_password_msg: "Password reset has expired."
+    not_found_user_msg: "User not found!"
+    new:
+      title: "Forgot Password"
+      header: "Forgot Password"
+      email_lb: "Email"
+      submit: "Submit"
+    edit:
+      title: "Reset Password"
+      header: "Reset Password"
+      email_lb: "Email"
+      password_lb: "New Password"
+      confirm_lb: "Confirmation"
+      submit: "Update password"
+    update:
+      empty_msg: "can't be empty"
+      success_msg: "Password has been reset."
