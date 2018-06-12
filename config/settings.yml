@@ -4,3 +4,4 @@ password_min_length: 6
 check_box: "1"
 per_page_value: 10
 avatar_size: 80
+time_expire: 2
