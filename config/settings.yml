@@ -5,3 +5,8 @@ check_box: "1"
 per_page_value: 10
 avatar_size: 80
 time_expire: 2
+mcrposts_maxlength: 140
+mcrposts_size: 50
+current_user_avatar: 50
+picture_size: 5
+accept_file_type: "image/jpeg,image/gif,image/png"

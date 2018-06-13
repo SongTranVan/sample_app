@@ -57,6 +57,7 @@ en:
       header2_1: "sample application"
       link2: "Sign up now!"
       logo_alt: "Rails logo"
+      header3: "Micropost Feed"
     help:
       title: "Help"
       header: "Help"
@@ -111,10 +112,18 @@ en:
       header: "All Users"
       link: "Delete"
       confirm: "Are you sure?"
+    show:
+      header3: "Microposts (%{mcrpost_size})"
   shared:
     error_messages:
       error_content: "The form contains "
       error: "error"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+    user_info:
+      profile_link: "View my profile"
+      mcrpost: "micropost"
   sessions:
     new:
       title: "Log in"
@@ -167,3 +176,12 @@ en:
     update:
       empty_msg: "can't be empty"
       success_msg: "Password has been reset."
+  microposts:
+    create_success_msg: "Micropost created!"
+    delete_success_msg: "Micropost deleted!"
+    delete_fails_msg: "Can not delete!"
+    wrong_user_msg: "Wrong User!"
+    picture_size_msg: "should be less than 5MB"
+    posted_txt_ago: "Posted %{created_time} ago."
+    link: "Delete"
+    confirm_msg: "Are you sure?"
