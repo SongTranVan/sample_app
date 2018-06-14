@@ -6,6 +6,7 @@ class Micropost < ApplicationRecord
   validate  :picture_size
 
   scope :newest, ->{order(created_at: :desc)}
+  scope :find_by_ids, ->(following_ids, id){where "user_id IN (?) OR user_id = ?", following_ids, id}
   mount_uploader :picture, PictureUploader
 
   private
@@ -13,6 +14,6 @@ class Micropost < ApplicationRecord
   # Validates the size of an uploaded picture.
   def picture_size
     return unless picture.size > Settings.picture_size.megabytes
-    errors.add :picture, t("microposts.picture_size_msg")
+    errors.add :picture, I18n.t("microposts.picture_size_msg")
   end
 end

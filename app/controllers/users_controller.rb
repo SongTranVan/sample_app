@@ -13,7 +13,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.paginate page: params[:page]
+    @microposts = (@user.microposts.paginate page: params[:page],
+      per_page: Settings.per_page_value).newest
   end
 
   def create
@@ -45,6 +46,20 @@ class UsersController < ApplicationController
       flash[:warning] = t "users.delete_fails"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t ".title"
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.per_page_value
+    render "show_follow"
+  end
+
+  def followers
+    @title = t ".title"
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.per_page_value
+    render "show_follow"
   end
 
   private

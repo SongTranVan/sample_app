@@ -114,6 +114,17 @@ en:
       confirm: "Are you sure?"
     show:
       header3: "Microposts (%{mcrpost_size})"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    show_follow:
+      link: "View my profile"
+      mcrposts_txt: "Microposts:"
   shared:
     error_messages:
       error_content: "The form contains "
@@ -124,6 +135,9 @@ en:
     user_info:
       profile_link: "View my profile"
       mcrpost: "micropost"
+    stats:
+      following_txt: "following"
+      followers_txt: "followers"
   sessions:
     new:
       title: "Log in"
@@ -185,3 +199,7 @@ en:
     posted_txt_ago: "Posted %{created_time} ago."
     link: "Delete"
     confirm_msg: "Are you sure?"
+  alert:
+    max_size: "Maximum file size is 5MB. Please choose a smaller file."
+  relationships:
+    user_not_found_msg: "User not found!"
